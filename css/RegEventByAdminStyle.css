@@ -1,0 +1,19 @@
+form{
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-left: 10%;
+}
+ .mid-submit{
+    align-items: center !important;
+    font-size: 20px !important;
+    padding: 15px 25px !important;
+    background-color: #c41463;
+    color: white;
+    border-radius: 30px !important;
+    margin-left: 50%;
+}
+label{
+    font-size: 20px;
+}
