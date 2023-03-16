@@ -92,13 +92,13 @@
                       <form action="">
                           <p>
                               <label for="email">Email</label>
-                              <input type="text" class="form-input" name="email" placeholder="Enter your email address">
+                              <input type="text" class="form-input" id="email" name="email" placeholder="Enter your email address">
                           </p>
                           <p>
                               <label for="password">Password</label>
-                              <input type="password" class="form-input" name="password" placeholder="Enter your password">
+                              <input type="password" class="form-input" id="password" name="password" placeholder="Enter your password">
                           </p>
-                          <input type="submit" class="btn btn-primary" value="Login">
+                          <input type="submit" class="btn btn-primary" id="signIn" value="Login">
                       </form>
                   </div>
               </div>
@@ -109,16 +109,13 @@
                         
                           <p>
                               <label for="email">Email</label>
-                              <input type="text" class="form-input" name="email" placeholder="Enter your email address">
+                              <input type="text" id="email1" class="form-input" name="email" placeholder="Enter your email address">
                           </p>
                           <p>
                               <label for="password">Password</label>
-                              <input type="password" class="form-input" name="password" placeholder="Enter your password">
+                              <input type="password" id="password1" class="form-input" name="password" placeholder="Enter your password">
                           </p>
-                          <a href="attendance.html" class="admin-login">
-                            <button type="button" class="btn btn-primary">Login</button>
-                          </a>
-                          
+                          <input type="submit" id="sign1In" class="btn btn-primary" value="Login"> 
                       </form>
                   </div>
               </div>
@@ -129,13 +126,14 @@
 
 
 
+
     <!-- footer section start -->
     <div class="footer_section layout_padding">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 col-sm-6">
               <h1 class="customer_text">About</h1>
-              <p class="footer_lorem_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly</p>
+              <p class="footer_lorem_text">St. Joseph’s Degree & PG College, established in the year 1997 by the Hyderabad Archdiocese Educational Society, is a Co-education Catholic Christian Minority Institution. It has emerged as one of the leading higher educational institutions</p>
             </div>
             <div class="col-lg-4 col-sm-6">
               <h1 class="customer_text">Address</h1>
@@ -156,13 +154,13 @@
             <div class="col-lg-4 col-sm-6">
               <h1 class="customer_text">OUR Timings</h1>
               <div class="time_main">
-                <div class="footer_lorem_text">Monday <span class="monday_text">8:00 am - 9:00 pm</span></div>
-                <div class="footer_lorem_text">Tuesday <span class="monday_text1">8:00 am - 9:00 pm</span></div>
-                <div class="footer_lorem_text">Thursday <span class="monday_text2">8:00 am - 9:00 pm</span></div>
-                <div class="footer_lorem_text">Friday <span class="monday_text3">8:00 am - 9:00 pm</span></div>
-                <div class="footer_lorem_text">Saturday <span class="monday_text4">8:00 am - 9:00 pm</span></div>
+                <div class="footer_lorem_text">Monday <span class="monday_text">8:30 am - 5:30 pm</span></div>
+                <div class="footer_lorem_text">Tuesday <span class="monday_text1">8:30 am - 5:30 pm</span></div>
+                <div class="footer_lorem_text">Thursday <span class="monday_text2">8:30 am - 5:30 pm</span></div>
+                <div class="footer_lorem_text">Friday <span class="monday_text3">8:30 am - 5:30 pm</span></div>
+                <div class="footer_lorem_text">Saturday <span class="monday_text4">8:30 am - 5:30 pm</span></div>
                 <div class="footer_lorem_text">Sunday <span class="monday_text5">CLOSED</span></div>
-                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -187,5 +185,220 @@
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
-  </body>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+      <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+      <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-database.js"></script>
+
+ 
+<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js"></script>
+     
+     <!-- <script type="module">
+      // Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAwo4402xevk6djk7vVrdMJJjmmxMhYqCk",
+  authDomain: "sports-2d8ab.firebaseapp.com",
+  databaseURL: "https://sports-2d8ab-default-rtdb.firebaseio.com",
+  projectId: "sports-2d8ab",
+  storageBucket: "sports-2d8ab.appspot.com",
+  messagingSenderId: "604788597534",
+  appId: "1:604788597534:web:f97da0214475a5317c1f0f",
+  measurementId: "G-5SXMVZ3BWT"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      
+      // Get a reference to the Firebase database service
+      var database = firebase.database();
+      
+      // Student login function
+      function submitStudentLogin() {
+        var email = document.getElementById("student-email").value;
+        var password = document.getElementById("student-password").value;
+      
+        // Sign in user with email and password
+        firebase.auth().signInWithEmailAndPassword(email, password)
+          .then(function(userCredential) {
+            // Get the user ID
+            var userId = userCredential.user.uid;
+      
+            // Check if user is registered in Firebase database
+            database.ref('students/' + userId).once('value')
+              .then(function(snapshot) {
+                if (snapshot.exists()) {
+                  // Alert the user that they have logged in successfully
+                  alert("Student logged in successfully");
+      
+                  // Store the login data in the Firebase database
+                  database.ref('StudentLogin').push({
+                    userId: userId,
+                    email: email
+                  });
+      
+                  // Redirect to index.html
+                  window.location.href = "index.html";
+                } else {
+                  alert("Please check your credentials");
+                }
+              });
+          })
+          .catch(function(error) {
+            // Handle errors here
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            alert(errorMessage);
+          });
+      }
+      
+      // Admin login function
+      function submitAdminLogin() {
+        var email = document.getElementById("admin-email").value;
+        var password = document.getElementById("admin-password").value;
+      
+        // Sign in user with email and password
+        firebase.auth().signInWithEmailAndPassword(email, password)
+          .then(function(userCredential) {
+            // Get the user ID
+            var userId = userCredential.user.uid;
+      
+            // Check if user is registered in Firebase database
+            database.ref('admin').orderByChild("email").equalTo(email).once('value')
+              .then(function(snapshot) {
+                if (snapshot.exists()) {
+                  // Alert the user that they have logged in successfully
+                  alert("Admin logged in successfully");
+      
+                  // Store the login data in the Firebase database
+                  database.ref('AdminLogin').push({
+                    userId: userId,
+                    email: email
+                  });
+      
+                  // Redirect to attendance.html
+                  window.location.href = "attendance.html";
+                } else {
+                  alert("Please check your credentials");
+                }
+              });
+          })
+          .catch(function(error) {
+            // Handle errors here
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            alert(errorMessage);
+          });
+      }
+    </script> -->
+  
+
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+      import { getDatabase,set,ref } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
+             
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-analytics.js";
+        import { getAuth, signInWithEmailAndPassword,signOut,createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+         
+        
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAwo4402xevk6djk7vVrdMJJjmmxMhYqCk",
+authDomain: "sports-2d8ab.firebaseapp.com",
+databaseURL: "https://sports-2d8ab-default-rtdb.firebaseio.com",
+projectId: "sports-2d8ab",
+storageBucket: "sports-2d8ab.appspot.com",
+messagingSenderId: "604788597534",
+appId: "1:604788597534:web:f97da0214475a5317c1f0f",
+measurementId: "G-5SXMVZ3BWT"
+    };          
+  // Initialize Firebase
+  
+  const app =initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const database=getDatabase(app);
+  const auth = getAuth();
+  
+  
+  signIn.addEventListener('click',(e)=>{
+  e.preventDefault();
+  var email=document.getElementById('email').value;
+  var password=document.getElementById('password').value;
+  
+  
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
+    if (user) {
+      alert('Welcome! You are logged in as a student.');
+       window.location.href = "index.html";
+    }
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+  });
+
+  
+  })
+  
+
+
+
+
+
+  sign1In.addEventListener('click',(e)=>{
+  e.preventDefault();
+  var email=document.getElementById('email1').value;
+  var password=document.getElementById('password1').value;
+  
+  
+  signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in
+    const user = userCredential.user;
+    if (user) {
+      alert('Welcome! You are logged in as an admin.');
+       window.location.href = "attendance.html";
+    }
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+  });
+
+  
+  })
+  
+
+
+
+
+
+  </script>
+
+
+    </body>
   </html>

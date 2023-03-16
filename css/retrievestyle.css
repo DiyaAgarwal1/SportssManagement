@@ -1,0 +1,25 @@
+/* font-family: "Josefin Sans", sans-serif; */
+html {
+    scroll-behavior: smooth;
+    background-color: #112986;
+  }
+  
+  body {
+    /* background: #2e3192 !important; */
+    background: #112986 !important;
+    overflow-x: hidden;
+  }
+
+h3{
+    text-align: center;
+    align-items: center;
+    padding-top: 40px !important;
+    margin-bottom: 20px !important;
+    background-color: #c41463;
+}
+.container{
+    background-color: #112986;
+}
+div{
+    background-color: #fefefe;
+}
